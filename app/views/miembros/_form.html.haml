@@ -1,0 +1,25 @@
+= form_for @miembro, :html => { :multipart => true } do |f|
+  -if @miembro.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@miembro.errors.count, "error")} prohibited this miembro from being saved:"
+      %ul
+        - @miembro.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :nombre
+    = f.text_field :nombre
+  .field
+    = f.label :cargo
+    = f.text_field :cargo
+  .field
+    = f.label :correo
+    = f.text_field :correo
+  .field
+    = f.label :telefono, "Teléfono"
+    = f.text_field :telefono
+  .field
+    = f.label :avatar
+    = f.file_field :avatar
+  .actions
+    = f.submit 'Guardar'

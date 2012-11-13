@@ -1,0 +1,19 @@
+= form_for(@contacto, :url => { :controller => 'contactos', :action => 'create' }) do |f|
+  -if @contacto.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@contacto.errors.count, "error")} prohibited this contacto from being saved:"
+      %ul
+        - @contacto.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :nombre, "Nombre/Empresa"
+    = f.text_field :nombre
+  .field
+    = f.label :email, "E-mail"
+    = f.text_field :email
+  .field
+    = f.label :proyecto
+    = f.text_area :proyecto
+  .actions
+    = f.submit 'Enviar'

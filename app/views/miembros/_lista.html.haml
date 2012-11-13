@@ -1,0 +1,24 @@
+%table
+  %tr
+    %th
+    %th Nombre
+    %th Cargo
+    %th Correo
+    %th Telefono
+    -if current_admin
+      %th
+      %th
+      %th
+
+  - @miembros.each do |miembro|
+    %tr
+      %th= image_tag miembro.avatar(:thumb)
+      %td= miembro.nombre
+      %td= miembro.cargo
+      %td= miembro.correo
+      %td= miembro.telefono
+      -if current_admin
+        %td= link_to 'Ver', miembro
+        %td= link_to 'Editar', edit_miembro_path(miembro)
+        %td= link_to 'Eliminar', miembro, :confirm => 'Are you sure?', :method => :delete
+

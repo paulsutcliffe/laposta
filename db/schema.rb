@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121113174141) do
+ActiveRecord::Schema.define(:version => 20121113221737) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -29,6 +29,41 @@ ActiveRecord::Schema.define(:version => 20121113174141) do
 
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
+
+  create_table "contactos", :force => true do |t|
+    t.string   "nombre"
+    t.string   "email"
+    t.text     "proyecto"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "miembros", :force => true do |t|
+    t.string   "nombre"
+    t.string   "cargo"
+    t.string   "correo"
+    t.string   "telefono"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "titulo"
+    t.string   "tipo"
+    t.text     "descripcion"
+    t.string   "url_web"
+    t.string   "video"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "foto_file_name"
+    t.string   "foto_content_type"
+    t.integer  "foto_file_size"
+    t.datetime "foto_updated_at"
+  end
 
   create_table "slides", :force => true do |t|
     t.datetime "created_at"

@@ -1,4 +1,19 @@
 es:
+  app:
+    name: La Post-a Audiovisual
+  flash:
+    actions:
+      create:
+        notice: "%{resource_name} creado correctamente."
+      update:
+        notice: "%{resource_name} actualizado correctamente."
+      destroy:
+        notice: "%{resource_name} eliminado correctamente."
+        alert: "%{resource_name} no pudo ser eliminado."
+  will_paginate:
+    previous_label: "&#8592; Anterior"
+    next_label: "Siguiente &#8594;"
+    page_gap: "&hellip;"
   date:
     abbr_day_names:
     - dom

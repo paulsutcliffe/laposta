@@ -9,5 +9,5 @@ Entonces /^debería ver el video "(.*?)"$/ do |video|
 end
 
 Dado /^que existe el post "(.*?)"$/ do |titulo|
-  Post.new(:titulo => titulo, :tipo => "Diseño y Web", :descripcion => "Resumen acerca de que se trata el post Lain Adelgaza", :url_web => "www.lainadelgaza.net", :imagen => File.new("features/support/post.jpg", "r")).save!
+  Post.new(:titulo => titulo, :tipo => "Diseño y Web", :descripcion => "Resumen acerca de que se trata el post Lain Adelgaza", :url_web => "www.lainadelgaza.net", :foto => File.new("features/support/post.jpg", "r")).save!
 end

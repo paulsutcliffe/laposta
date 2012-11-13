@@ -11,7 +11,7 @@ Escenario: Agregar miembro
   Y lleno "Cargo" con "Editor"
   Y lleno "Correo" con "walter@lapost-a.com"
   Y lleno "Teléfono" con "998355383"
-  Y uso la imagen "miembro.jpg"
+  Y uso la imagen "miembro.jpg" para "Avatar"
   Cuando presiono "Guardar"
   Entonces debería ver "Miembro creado correctamente."
   Y debería ver "Walter Peñaherrera"
@@ -26,7 +26,7 @@ Escenario: Editar un miembro existente
   Cuando hago click en "Staff"
   Y hago click en "Editar"
   Y lleno "Nombre" con "Miguel Grau"
-  Y uso la imagen "miembro2.jpg"
+  Y uso la imagen "miembro2.jpg" para "Avatar"
   Cuando presiono "Guardar"
   Entonces debería ver "Miembro actualizado correctamente."
   Y debería ver "Miguel Grau"
@@ -45,4 +45,5 @@ Escenario: Los usuarios pueden ver los miembros
   Dado que existe el miembro "Walter Peñaherrera"
   Y que estoy en la página inicial
   Entonces debería ver "Walter Peñaherrera"
+  Y debería ver la imagen "miembro.jpg"
   Y no debería ver los controles de administración

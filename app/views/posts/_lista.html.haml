@@ -1,0 +1,24 @@
+%table
+  %tr
+    %th
+    %th Titulo
+    %th Tipo
+    %th Descripcion
+    %th Url web
+    %th Video
+    %th
+    %th
+    %th
+
+  - @posts.each do |post|
+    %tr
+      %td= image_tag post.foto(:thumb)
+      %td= post.titulo
+      %td= post.tipo
+      %td= post.descripcion
+      %td= post.url_web
+      %td= post.video
+      -if current_admin
+        %td= link_to 'Ver', post
+        %td= link_to 'Editar', edit_post_path(post)
+        %td= link_to 'Eliminar', post, :confirm => 'Are you sure?', :method => :delete
