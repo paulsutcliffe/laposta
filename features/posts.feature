@@ -3,39 +3,58 @@
 Característica: adminstrar los posts
 
 @admin
-Escenario: Crear un post
+Escenario: Crear un post de animación y post y Realización
   Cuando hago click en "Post-afolio"
   Y hago click en "Nuevo Post"
-  Y selecciono "Realización" en "Clase"
-  Y lleno "Título" con "Alejo y los cangrejos solidarios"
-  Y lleno "Descripción" con "Resumen acerca de que se trata el post Alejo y los cangrejos solidarios"
-  Y lleno "Url web" con "www.lainadelgaza.net"
+  Y selecciono "Animación y Post" en "Clase"
+  Y lleno "Título" con "Un día como hoy"
+  Y lleno "Descripción" con "Microprograma realizado en animación 2d"
+  Y lleno "Video" con "http://vimeo.com/53043267"
   Y uso la imagen "post.jpg"
   Cuando presiono "Guardar"
-  Entonces debería ver "Post creado correctamente"
-  Y debería ver "Alejo y los cangrejos solidarios"
-  Y debería ver "Resumen acerca de que se trata el post Alejo y los cangrejos solidarios"
+  Entonces debería ver "Post actualizado correctamente"
+  Y debería ver "Realización"
+  Y debería ver "Un día como hoy"
+  Y debería ver "Microprograma realizado en animación 2d"
   Y debería ver la imagen "post.jpg"
+  Y debería ver el video "http://vimeo.com/53043267"
 
-@admin @editar
-  Escenario: Editar un post
-  Dado que existe el post "Lain Adelgaza"
-  Y que estoy en la página inicial
-  Cuando hago click en "Posts"
-  Y hago click en "Posts y Canciones con Valores de la Tia Botas"
-  Y hago click en "Editar"
-  Y lleno "Nombre" con "Pomodoro el choro"
-  Y uso la imagen "post2.jpg"
+@admin
+Escenario: Crear un post de diseño y web
+  Cuando hago click en "Post-afolio"
+  Y hago click en "Nuevo Post"
+  Y selecciono "Diseño y Web" en "Clase"
+  Y lleno "Título" con "Website Lain Adelgaza"
+  Y lleno "Descripción" con "Resumen acerca de que se trata el post Lain Adelgaza"
+  Y lleno "Url Web" con "www.lainadelgaza.net"
+  Y uso la imagen "post.jpg"
   Cuando presiono "Guardar"
   Entonces debería ver "Post actualizado correctamente"
-  Y debería ver "Pomodoro el choro"
-  Y debería ver la imagen "post2.jpg"
+  Y debería ver "Realización"
+  Y debería ver "Website Lain Adelgaza"
+  Y debería ver "Resumen acerca de que se trata el post Lain Adelgaza"
+  Y debería ver la imagen "post.jpg"
+
+@admin
+Escenario: Editar un post
+  Dado que existe el post "Website Lain Adelgaza"
+  Cuando hago click en "Post-afolio"
+  Y hago click en "Editar"
+  Y selecciono "Realización" en "Clase"
+  Y lleno "Título" con "Website Lain Adelgaza"
+  Y lleno "Descripción" con "Resumen acerca de que se trata el post Lain Adelgaza"
+  Y lleno "Url Web" con "www.lainadelgaza.net"
+  Y uso la imagen "post.jpg"
+  Cuando presiono "Guardar"
+  Entonces debería ver "Post actualizado correctamente"
+  Y debería ver "Realización"
+  Y debería ver "Website Lain Adelgaza"
+  Y debería ver "Resumen acerca de que se trata el post Lain Adelgaza"
+  Y debería ver la imagen "post.jpg"
 
 @admin
   Escenario: Eliminar un post
-  Dado que existe el post "Alejo y los cangrejos solidarios" de la categoría "Posts y Canciones con Valores de la Tia Botas"
-  Y que estoy en la página inicial
-  Cuando hago click en "Posts"
-  Y hago click en "Posts y Canciones con Valores de la Tia Botas"
+  Dado que existe el post "Website Lain Adelgaza"
+  Cuando hago click en "Post-afolio"
   Y hago click en "Eliminar"
   Entonces debería ver "Post eliminado correctamente"
