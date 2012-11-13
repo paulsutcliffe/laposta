@@ -1,0 +1,17 @@
+%h1 Listing slides
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @slides.each do |slide|
+    %tr
+      %td= link_to 'Show', slide
+      %td= link_to 'Edit', edit_slide_path(slide)
+      %td= link_to 'Destroy', slide, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Slide', new_slide_path

@@ -1,4 +1,6 @@
 Laposta::Application.routes.draw do
+  resources :slides
+
   get "home/index"
 
   root :to => "home#index"
