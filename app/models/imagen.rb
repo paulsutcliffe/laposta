@@ -1,9 +1,7 @@
-class Post < ActiveRecord::Base
-  has_many :imagenes
+class Imagen < ActiveRecord::Base
+  belongs_to :post
 
-  TIPOS = ['Realización', 'Animación y Post', 'Diseño y Web']
-
-  validates :tipo, :inclusion => { :in => TIPOS }, :presence => true
+  attr_accessible :post_id
 
   validates :foto, :presence => true
   validates_attachment_content_type :foto, :content_type =>  ['image/png', 'image/jpg', 'image/jpeg']
@@ -14,11 +12,20 @@ class Post < ActiveRecord::Base
                                          :geometry => '190#',
                                          :quality => 80,
                                          :format => 'jpg'
-                                       },
-                                         :preview => {
-                                         :geometry => '229#x88#',
-                                         :quality => 80,
-                                         :format => 'jpg'
                                        }
                                       }
+
+  include Rails.application.routes.url_helpers
+
+  #one convenient method to pass jq_upload the necessary information
+  def to_jq_upload
+    {
+      "name" => read_attribute(:foto),
+      "size" => foto.size,
+      "url" => foto.url,
+      "thumbnail_url" => foto(:thumb),
+      "delete_url" => imagen_path(:id => id),
+      "delete_type" => "DELETE"
+    }
+  end
 end

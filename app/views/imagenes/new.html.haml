@@ -1,0 +1,4 @@
+%h1= 'Subir imágenes para ' + Post.find_by_id(params[:post_id]).titulo
+=render "shared/fileupload"
+
+= link_to 'Volver', post_path(params[:post_id])

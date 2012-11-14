@@ -197,3 +197,10 @@ es:
   activerecord:
     errors:
       <<: *errors
+  fileupload:
+    add_files: Agregar archivos
+    start_upload: Subir todas las canciones
+    cancel_upload: Cancelar carga
+    delete_multi: Eliminar varios archivos
+    start: Iniciar
+    cancel: Cancelar

@@ -1,5 +1,11 @@
 Laposta::Application.routes.draw do
-  resources :posts
+  get "imagenes/new"
+
+  resources :posts do
+    resources :imagenes
+  end
+
+  resources :imagenes
 
   resources :miembros
 
