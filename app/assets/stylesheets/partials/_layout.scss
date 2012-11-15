@@ -1,0 +1,96 @@
+/*
+=============================================================
+MAIN STRUCTURE
+============================================================= 
+*/
+
+/* 
+body ul, body ol, body footer nav li,
+html body footer nav,
+html body footer .copyright,
+.navigation li, header nav li{padding:0; margin:0}
+.typography p, .content p, section[role="main"] > article p{margin-top:0} */
+
+body{
+  @include blueprint-debug;
+  font-family:$font-primary;
+  .wrapper {
+    @include container; 
+  /*  @include showgrid; */
+  }
+
+  header {
+    width: 100%;
+    height : $header-size;
+    background: $bg-header; 
+    .inner {
+      @include container;
+      h1 {
+        @include tcenter;
+        %span {
+          display: none;
+        }
+      }
+    }
+
+  }
+  .main-menu {
+    padding: $main-menu-height;
+  }
+  footer {
+    width: 100%;
+    background: $color-secondary-dark;
+    .inner {
+      @include container;
+      .social-links {
+        @include span(6);
+        @include fleft;
+      }
+      .copyright {
+        @include span(10);
+        @include fright;
+        font-size: $size-paragraph;
+        color: white;
+        padding-top: $space*3;
+        @include tright;
+      }
+    }
+  }
+}
+
+
+.region {
+  width: $main-width;
+  margin: 0 auto;
+}
+
+.region:after {
+  content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; 
+}
+.region {
+  zoom:1
+}
+
+a {
+  color:$color;
+  text-decoration:none;
+}
+
+p, li {
+  @include paragraph;
+}
+
+
+
+
+
+
+
+
+#laposta-description {
+  @include tcenter;
+  margin:$laposta-description 0 $laposta-description * 2; 
+}
+
+
+

@@ -1,24 +1,20 @@
-%table
-  %tr
-    %th
-    %th Nombre
-    %th Cargo
-    %th Correo
-    %th Telefono
-    -if current_admin
-      %th
-      %th
-      %th
-
+%h2.title
+  Staff
+%ul
   - @miembros.each do |miembro|
-    %tr
-      %th= image_tag miembro.avatar(:thumb)
-      %td= miembro.nombre
-      %td= miembro.cargo
-      %td= miembro.correo
-      %td= miembro.telefono
+    %li
+      = image_tag miembro.avatar(:thumb)
+      .datos
+        %h3.nombre
+          = miembro.nombre
+        %h4.cargo
+          = miembro.cargo
+        %span.email 
+          = miembro.correo
+        %span.phone
+          = miembro.telefono
       -if current_admin
-        %td= link_to 'Ver', miembro
-        %td= link_to 'Editar', edit_miembro_path(miembro)
-        %td= link_to 'Eliminar', miembro, :confirm => 'Are you sure?', :method => :delete
+        = link_to 'Ver', miembro
+        = link_to 'Editar', edit_miembro_path(miembro)
+        = link_to 'Eliminar', miembro, :confirm => 'Are you sure?', :method => :delete
 

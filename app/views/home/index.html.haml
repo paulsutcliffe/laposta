@@ -1,16 +1,21 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+.wrapper
+  = render 'layouts/slider'
+
+= render 'laposta'
+
+%h2#servicios-block.page-title [ SERVICIOS ]
+= render 'servicios'
+
+%h2#postafolio-block.page-title [ POST-AFOLIO ]
+= render 'postafolio'
+
+%h2#consultas-block.page-title [ CONSULTAS ]
+= render 'consultas'
 
 
 
--if current_admin
-  = link_to 'Mensajes de contacto', contactos_path
-  = link_to 'Staff', miembros_path
-  = link_to 'Slides', slides_path
-  = link_to 'Post-afolio', posts_path
 
-=render 'miembros/lista'
-=render 'slides/lista'
-=render 'posts/lista'
 
-=render 'contactos/form'
+
+
+

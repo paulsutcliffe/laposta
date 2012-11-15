@@ -1,0 +1,12 @@
+
+
+
+ul.menu {
+  .main-menu & {
+    @include tcenter;
+    li {
+      @include inline-block-(right);
+      padding: 0 $main-menu-li-padding;
+    }
+  }
+}

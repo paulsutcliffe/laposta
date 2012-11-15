@@ -1,0 +1,87 @@
+-# content_for :scripts do
+= render 'flare'
+= render 'flare-init'
+
+#postafolio.region
+  %nav#portafolio-botones
+    %li
+      = link_to 'Galería', '#'
+    %li
+      = link_to 'Realización', '#'
+    %li
+      = link_to 'Animación y Post', '#'
+    %li
+      = link_to 'Diseño Web', '#'
+
+  %ul#portafolio-listado
+    %li.picture
+      = image_tag('/images/images/img-portafolio.jpg')
+      .content
+        %h2.title Lain
+        %p
+          Portal Lain Internacional. Diseño y desarrollo de las páginas de Perú, 
+          Uruguay, Bolivia, Costa Rica, Guatemala y El Salvador.
+        .email
+          www.lainadelgaza.net
+        = link_to '', '/images/images/img-portafolio-full-1.jpg', 
+          :"data-target" => 'flare', 
+          :"data-flare-gallery" => 'gallery1', 
+          :"data-flare-thumb" => 'thumb01.jpg'
+
+    %li.video
+      = image_tag('/images/images/img-portafolio.jpg')
+      .content 
+        %h2.title Lain Video
+        %p
+          Portal Lain Internacional. Diseño y desarrollo de las páginas de Perú, 
+          Uruguay, Bolivia, Costa Rica, Guatemala y El Salvador.
+        .email
+          www.lainadelgaza.net
+
+        = link_to '', '01.jpg', 
+          :"data-target" => 'flare', 
+          :"data-flare-gallery" => 'video1', 
+          :"data-flare-thumb" => 'thumb01.jpg',
+          :"data-flare-video" => 'http://www.youtube.com/watch?v=AFA-rOls8YA'
+
+    %li.picture
+      = image_tag('/images/images/img-portafolio.jpg')
+      .content
+        %h2.title Lain Foto 2
+        %p
+          Portal Lain Internacional. Diseño y desarrollo de las páginas de Perú, 
+          Uruguay, Bolivia, Costa Rica, Guatemala y El Salvador.
+        .email
+          www.lainadelgaza.net
+        = link_to '', '/images/images/img-portafolio-full-2.jpg', 
+          :"data-target" => 'flare', 
+          :"data-flare-gallery" => 'gallery1', 
+          :"data-flare-thumb" => 'thumb01.jpg'
+
+    %li.picture
+      = image_tag('/images/images/img-portafolio.jpg')
+      .content
+        %h2.title Lain Foto 3
+        %p
+          Portal Lain Internacional. Diseño y desarrollo de las páginas de Perú, 
+          Uruguay, Bolivia, Costa Rica, Guatemala y El Salvador.
+        .email
+          www.lainadelgaza.net
+        = link_to '', '/images/images/img-portafolio-full-1.jpg', 
+          :"data-target" => 'flare', 
+          :"data-flare-gallery" => 'gallery1', 
+          :"data-flare-thumb" => 'thumb01.jpg'
+
+    %li.picture
+      = image_tag('/images/images/img-portafolio.jpg')
+      .content
+        %h2.title Lain
+        %p
+          Portal Lain Internacional. Diseño y desarrollo de las páginas de Perú, 
+          Uruguay, Bolivia, Costa Rica, Guatemala y El Salvador.
+        .email
+          www.lainadelgaza.net
+        = link_to '', '/images/images/img-portafolio-full-2.jpg', 
+          :"data-target" => 'flare', 
+          :"data-flare-gallery" => 'gallery1', 
+          :"data-flare-thumb" => 'thumb01.jpg'
