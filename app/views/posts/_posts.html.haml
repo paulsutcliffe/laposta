@@ -1,0 +1,12 @@
+%h2.title
+  Posts
+.content
+  - @ultimos_posts.each do |post|
+    %article
+      %h3
+        = post.titulo
+      %span.date
+        = post.created_at
+      %p
+        = truncate(post.descripcion, :length => 60)
+      = image_tag post.foto(:preview)

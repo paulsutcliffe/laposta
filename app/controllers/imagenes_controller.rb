@@ -12,7 +12,7 @@ class ImagenesController < ApplicationController
   def create
     @imagen = Imagen.new
     @imagen.post_id = params[:post_id]
-    @imagen.foto = params[:imagen][:path]
+    @imagen.fotografia = params[:imagen][:path]
     if @imagen.save
       respond_to do |format|
         format.html {                                         #(html response is for browsers using iframe sollution)

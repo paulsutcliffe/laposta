@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121114022605) do
+ActiveRecord::Schema.define(:version => 20121115232619) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -42,10 +42,10 @@ ActiveRecord::Schema.define(:version => 20121114022605) do
     t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "foto_file_name"
-    t.string   "foto_content_type"
-    t.integer  "foto_file_size"
-    t.datetime "foto_updated_at"
+    t.string   "fotografia_file_name"
+    t.string   "fotografia_content_type"
+    t.integer  "fotografia_file_size"
+    t.datetime "fotografia_updated_at"
   end
 
   create_table "miembros", :force => true do |t|

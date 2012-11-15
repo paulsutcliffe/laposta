@@ -1,6 +1,15 @@
 class Post < ActiveRecord::Base
   has_many :imagenes
 
+  def self.search(search)
+    if search
+      where('tipo LIKE ?', "%#{search}%")
+    else
+      scoped
+    end
+  end
+
+
   TIPOS = ['Realización', 'Animación y Post', 'Diseño y Web']
 
   validates :tipo, :inclusion => { :in => TIPOS }, :presence => true
@@ -11,14 +20,15 @@ class Post < ActiveRecord::Base
 
   has_attached_file :foto, :styles => {
                                          :thumb => {
-                                         :geometry => '190#',
+                                         :geometry => '190x190#',
                                          :quality => 80,
                                          :format => 'jpg'
                                        },
                                          :preview => {
-                                         :geometry => '229#x88#',
+                                         :geometry => '229x88#',
                                          :quality => 80,
                                          :format => 'jpg'
                                        }
                                       }
-end
+
+ end

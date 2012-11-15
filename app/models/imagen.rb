@@ -3,11 +3,11 @@ class Imagen < ActiveRecord::Base
 
   attr_accessible :post_id
 
-  validates :foto, :presence => true
-  validates_attachment_content_type :foto, :content_type =>  ['image/png', 'image/jpg', 'image/jpeg']
-  validates_attachment_size :foto, :less_than => 4.megabytes
+  validates :fotografia, :presence => true
+  validates_attachment_content_type :fotografia, :content_type =>  ['image/png', 'image/jpg', 'image/jpeg']
+  validates_attachment_size :fotografia, :less_than => 4.megabytes
 
-  has_attached_file :foto, :styles => {
+  has_attached_file :fotografia, :styles => {
                                          :thumb => {
                                          :geometry => '190#',
                                          :quality => 80,
@@ -21,9 +21,9 @@ class Imagen < ActiveRecord::Base
   def to_jq_upload
     {
       "name" => read_attribute(:foto),
-      "size" => foto.size,
-      "url" => foto.url,
-      "thumbnail_url" => foto(:thumb),
+      "size" => fotografia.size,
+      "url" => fotografia.url,
+      "thumbnail_url" => fotografia(:thumb),
       "delete_url" => imagen_path(:id => id),
       "delete_type" => "DELETE"
     }

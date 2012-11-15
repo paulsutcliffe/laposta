@@ -2,6 +2,10 @@
 
 %p
   %b Foto:
+  = image_tag @post.foto(:preview)
+
+%p
+  %b Foto:
   = image_tag @post.foto(:thumb)
 
 %p
