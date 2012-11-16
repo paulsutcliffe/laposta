@@ -15,18 +15,25 @@
     - @posts.each do |post|
       %li{:class => agregar_clase_segun_tipo(post) }
         = image_tag post.foto(:thumb)
-        -if current_admin
-          %td= link_to 'Ver', post
-          %td= link_to 'Editar', edit_post_path(post)
-          %td= link_to 'Eliminar', post, :confirm => 'Are you sure?', :method => :delete
         .content
           %h2.title= post.titulo
           %p
             = post.descripcion
             .email
             = post.url_web
-          = link_to '', post.foto(:full),
+          = link_to '', post.foto(:full), :class => 'lightbox',
             :"data-target" => 'flare',
-            :"data-flare-gallery" => 'gallery1',
+            :"data-flare-gallery" => post.id,
+            :"data-flare-thumb" => post.foto(:thumb)
+          -if current_admin
+            .crud
+              = link_to 'Ver', post
+              = link_to 'Editar', edit_post_path(post)
+              = link_to 'Eliminar', post, :confirm => 'Are you sure?', :method => :delete
+
+        - post.imagenes.each do |imagen|
+          = link_to '', imagen.fotografia(:thumb), :class => 'lightbox',
+            :"data-target" => 'flare',
+            :"data-flare-gallery" => post.id,
             :"data-flare-thumb" => post.foto(:thumb)
 

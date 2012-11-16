@@ -227,7 +227,7 @@ label {
   color: white;
 }
 /* line 28, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado li .content a {
+#portafolio-listado li .content a.lightbox {
   width: 100%;
   height: 100%;
   display: block;
@@ -236,7 +236,7 @@ label {
   left: 0;
 }
 /* line 32, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado li .content a:after {
+#portafolio-listado li .content a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: 0px -50px;
   width: 24px;
@@ -261,7 +261,7 @@ label {
   vertical-align: top;
 }
 /* line 47, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado li.picture a {
+#portafolio-listado li.picture a.lightbox {
   width: 100%;
   height: 100%;
   display: block;
@@ -270,7 +270,7 @@ label {
   left: 0;
 }
 /* line 51, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado li.picture a:after {
+#portafolio-listado li.picture a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: 0px -50px;
   width: 24px;
@@ -285,7 +285,7 @@ label {
   right: 10px;
 }
 /* line 58, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado li.video a {
+#portafolio-listado li.video a.lightbox {
   width: 100%;
   height: 100%;
   display: block;
@@ -294,7 +294,7 @@ label {
   left: 0;
 }
 /* line 62, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado li.video a:after {
+#portafolio-listado li.video a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -30px -50px;
   width: 24px;
@@ -766,4 +766,10 @@ p, li {
 /* line 95, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content p {
   display: inline;
+}
+
+/* line 101, ../../app/assets/stylesheets/partials/_layout.scss */
+.crud {
+  position: relative;
+  z-index: 100;
 }

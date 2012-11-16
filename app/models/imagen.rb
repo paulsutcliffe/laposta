@@ -1,6 +1,8 @@
 class Imagen < ActiveRecord::Base
   belongs_to :post
 
+
+
   attr_accessible :post_id
 
   validates :fotografia, :presence => true
