@@ -150,13 +150,18 @@ label {
   font-size: 12px;
 }
 
-/* line 50, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 49, ../../app/assets/stylesheets/partials/_forms.scss */
+.field.textarea {
+  margin-bottom: 5px;
+}
+
+/* line 53, ../../app/assets/stylesheets/partials/_forms.scss */
 .field input {
   width: 220px;
   padding: 10px 5px;
 }
 
-/* line 55, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 58, ../../app/assets/stylesheets/partials/_forms.scss */
 .field textarea {
   width: 260px;
   padding: 10px 0 0 5px;
@@ -164,7 +169,7 @@ label {
   min-height: 100px;
 }
 
-/* line 62, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 65, ../../app/assets/stylesheets/partials/_forms.scss */
 .required {
   font-size: 14px;
   padding-bottom: 5px;
@@ -172,7 +177,7 @@ label {
   background-position: 0 100%;
 }
 
-/* line 69, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 72, ../../app/assets/stylesheets/partials/_forms.scss */
 .actions input {
   float: right;
   color: #ed1c24;
@@ -190,19 +195,20 @@ label {
 #portafolio-listado h2.title {
   background: none;
   font-size: 20px;
+  line-height: 120%;
 }
-/* line 9, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 10, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado h2.title:after {
   background: none;
 }
-/* line 13, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 14, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li {
   margin: 0 10px 10px 0;
   float: left;
   position: relative;
   overflow: hidden;
 }
-/* line 18, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 19, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content {
   background: #8b0304;
   width: 100%;
@@ -222,11 +228,11 @@ label {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
 }
-/* line 25, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 26, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content p {
   color: white;
 }
-/* line 28, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 29, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content a.lightbox {
   width: 100%;
   height: 100%;
@@ -235,7 +241,7 @@ label {
   top: 0;
   left: 0;
 }
-/* line 32, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 33, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: 0px -50px;
@@ -250,17 +256,17 @@ label {
   bottom: 10px;
   right: 10px;
 }
-/* line 38, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 39, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li:hover .content {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 42, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 45, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li img {
   vertical-align: top;
 }
-/* line 47, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 50, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.picture a.lightbox {
   width: 100%;
   height: 100%;
@@ -269,7 +275,7 @@ label {
   top: 0;
   left: 0;
 }
-/* line 51, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 54, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.picture a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: 0px -50px;
@@ -284,7 +290,7 @@ label {
   bottom: 10px;
   right: 10px;
 }
-/* line 58, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 61, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.video a.lightbox {
   width: 100%;
   height: 100%;
@@ -293,7 +299,7 @@ label {
   top: 0;
   left: 0;
 }
-/* line 62, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 65, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.video a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -30px -50px;
@@ -309,29 +315,29 @@ label {
   right: 10px;
 }
 
-/* line 72, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 75, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links {
   text-align: left;
 }
-/* line 74, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 77, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links .label, footer .social-links ul {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   text-align: left;
 }
-/* line 77, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 80, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links .label {
   position: relative;
   top: -5px;
   margin-right: 10px;
   color: white;
 }
-/* line 82, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 85, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul {
   margin-top: 10px;
 }
-/* line 84, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 87, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li {
   display: inline-block;
   *display: inline;
@@ -339,11 +345,11 @@ footer .social-links ul li {
   text-align: left;
   margin: 0;
 }
-/* line 87, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 90, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a {
   background-color: green;
 }
-/* line 90, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 93, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a.facebook {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -57px -48px;
@@ -355,7 +361,7 @@ footer .social-links ul li a.facebook {
   *zoom: 1;
   text-align: left;
 }
-/* line 91, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 94, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a.youtube {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -87px -48px;
@@ -379,6 +385,27 @@ footer .social-links ul li a.youtube {
   *zoom: 1;
   text-align: right;
   padding: 0 20px;
+}
+/* line 10, ../../app/assets/stylesheets/partials/_navigation.scss */
+.main-menu ul.menu li a {
+  text-transform: uppercase;
+}
+/* line 15, ../../app/assets/stylesheets/partials/_navigation.scss */
+#menu-dinamico ul.menu {
+  text-align: center;
+}
+/* line 17, ../../app/assets/stylesheets/partials/_navigation.scss */
+#menu-dinamico ul.menu li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: right;
+  padding: 0 20px;
+  margin: 0;
+}
+/* line 21, ../../app/assets/stylesheets/partials/_navigation.scss */
+#menu-dinamico ul.menu li a {
+  text-transform: uppercase;
 }
 
 /* line 13, ../../app/assets/stylesheets/partials/_blocks.scss */
@@ -552,7 +579,7 @@ footer .social-links ul li a.youtube {
   float: right;
 }
 
-/* line 27, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 28, ../../app/assets/stylesheets/partials/_headings.scss */
 .page-title {
   color: white;
   font-size: 24px;
@@ -562,9 +589,10 @@ footer .social-links ul li a.youtube {
   border-bottom: 3px solid #ed1c24;
   margin: 80px 0 40px;
   text-align: center;
+  border-top: 45px solid white;
 }
 
-/* line 31, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 32, ../../app/assets/stylesheets/partials/_headings.scss */
 h2.title {
   position: relative;
   font-family: "Muli";
@@ -574,7 +602,7 @@ h2.title {
   color: #ed1c24;
   background: url(../images/backgrounds/border-style.jpg) repeat-x 0 100%;
 }
-/* line 35, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 36, ../../app/assets/stylesheets/partials/_headings.scss */
 h2.title:after {
   content: "";
   display: block;
@@ -591,45 +619,45 @@ h2.title:after {
   *zoom: 1;
   text-align: left;
 }
-/* line 40, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 41, ../../app/assets/stylesheets/partials/_headings.scss */
 #posts h2.title:after {
   background-position: 0% 0;
 }
-/* line 41, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 42, ../../app/assets/stylesheets/partials/_headings.scss */
 #staff h2.title:after {
   background-position: -35px 0;
 }
-/* line 42, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 43, ../../app/assets/stylesheets/partials/_headings.scss */
 #likes h2.title:after {
   background-position: -70px 0;
 }
-/* line 44, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 45, ../../app/assets/stylesheets/partials/_headings.scss */
 #sidebar-form h2.title:after {
   background-position: -110px 0;
 }
-/* line 45, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 46, ../../app/assets/stylesheets/partials/_headings.scss */
 #content-map h2.title:after {
   background-position: -152px 0;
 }
-/* line 48, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 49, ../../app/assets/stylesheets/partials/_headings.scss */
 #laposta-description h2.title {
   color: #636466;
   font-size: 12px;
   background: none;
   display: inline;
 }
-/* line 49, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 50, ../../app/assets/stylesheets/partials/_headings.scss */
 #laposta-description h2.title:after {
   background: none;
 }
-/* line 53, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 54, ../../app/assets/stylesheets/partials/_headings.scss */
 #servicios-listado h2.title {
   color: #b1b3b6;
   font-size: 14px;
   padding: 20px 0 15px;
   margin: 0 0 15px;
 }
-/* line 54, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 55, ../../app/assets/stylesheets/partials/_headings.scss */
 #servicios-listado h2.title:after {
   background: none;
 }
@@ -677,39 +705,46 @@ body header {
   height: 130px;
   background: url(../images/backgrounds/bg-header.jpg) repeat-x;
 }
-/* line 26, ../../app/assets/stylesheets/partials/_layout.scss */
-body header .inner {
+/* line 27, ../../app/assets/stylesheets/partials/_layout.scss */
+body header .wrapper {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  height: 130px;
 }
-/* line 28, ../../app/assets/stylesheets/partials/_layout.scss */
-body header .inner h1 {
+/* line 30, ../../app/assets/stylesheets/partials/_layout.scss */
+body header .wrapper h1 {
   text-align: center;
+  margin-top: 25px;
 }
-/* line 37, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 33, ../../app/assets/stylesheets/partials/_layout.scss */
+body header .wrapper h1 span {
+  display: none;
+}
+/* line 44, ../../app/assets/stylesheets/partials/_layout.scss */
 body .main-menu {
   padding: 25px;
 }
-/* line 40, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 47, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer {
   width: 100%;
+  margin-top: 50px;
   background: #8b0304;
 }
-/* line 43, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 51, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 45, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 53, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner .social-links {
   width: 230px;
   float: left;
 }
-/* line 49, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 57, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner .copyright {
   width: 390px;
   float: right;
@@ -719,13 +754,13 @@ body footer .inner .copyright {
   text-align: right;
 }
 
-/* line 62, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 70, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   width: 800px;
   margin: 0 auto;
 }
 
-/* line 67, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 75, ../../app/assets/stylesheets/partials/_layout.scss */
 .region:after {
   content: ".";
   display: block;
@@ -735,18 +770,18 @@ body footer .inner .copyright {
   height: 0;
 }
 
-/* line 70, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 78, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   zoom: 1;
 }
 
-/* line 74, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 82, ../../app/assets/stylesheets/partials/_layout.scss */
 a {
   color: #636466;
   text-decoration: none;
 }
 
-/* line 79, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 87, ../../app/assets/stylesheets/partials/_layout.scss */
 p, li {
   font-size: 12px;
   line-height: 115%;
@@ -754,22 +789,59 @@ p, li {
   margin-bottom: 10px;
 }
 
-/* line 90, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 98, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description {
   text-align: center;
-  margin: 35px 0 70px;
+  margin: 0 0 70px;
+  border-top: 55px solid white;
 }
-/* line 93, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 102, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content {
   display: inline;
 }
-/* line 95, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 104, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content p {
   display: inline;
 }
 
-/* line 101, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 110, ../../app/assets/stylesheets/partials/_layout.scss */
 .crud {
   position: relative;
   z-index: 100;
+}
+
+/* line 111, ../../app/assets/stylesheets/partials/_layout.scss */
+.email {
+  z-index: 110;
+  position: relative;
+}
+/* line 113, ../../app/assets/stylesheets/partials/_layout.scss */
+.email a {
+  color: white;
+}
+/* line 114, ../../app/assets/stylesheets/partials/_layout.scss */
+.email a:hover {
+  text-decoration: underline;
+}
+
+/* line 119, ../../app/assets/stylesheets/partials/_layout.scss */
+#home-top {
+  display: none;
+}
+
+/* line 120, ../../app/assets/stylesheets/partials/_layout.scss */
+#menu-dinamico {
+  position: fixed;
+  top: -200px;
+  width: 100%;
+  background: white;
+  padding: 15px 0;
+  z-index: 100;
+}
+/* line 127, ../../app/assets/stylesheets/partials/_layout.scss */
+#menu-dinamico #home-top {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: left;
 }

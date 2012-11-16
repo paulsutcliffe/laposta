@@ -14,7 +14,12 @@ class Imagen < ActiveRecord::Base
                                          :geometry => '190#',
                                          :quality => 80,
                                          :format => 'jpg'
-                                       }
+                                        },
+                                         :full => {
+                                         :geometry => '800x600>',
+                                         :quality => 80,
+                                         :format => 'jpg'
+                                         }
                                       }
 
   include Rails.application.routes.url_helpers

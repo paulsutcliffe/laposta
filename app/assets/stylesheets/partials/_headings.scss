@@ -10,6 +10,7 @@
   border-bottom: 3px solid $color-secondary;
   margin: $space * 16 0 $space * 8;
   @include tcenter;
+  border-top: 45px solid white;
 }
 
 @mixin heading {

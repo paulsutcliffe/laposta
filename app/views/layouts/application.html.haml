@@ -9,7 +9,8 @@
   %body
     - if notice
       %p.notice= notice
-
+    #menu-dinamico
+      = render 'layouts/menu'
     %header{:role => 'banner'}
       .wrapper
         %h1

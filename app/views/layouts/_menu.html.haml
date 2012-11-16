@@ -1,13 +1,15 @@
 
 %ul.menu
+  %li#home-top
+    = link_to  'Inicio', 'javascript:$.scrollTo("body",800);' 
   %li
-    = link_to  'LA POST-A', '#' 
+    = link_to  'LA POST-A', 'javascript:$.scrollTo("#laposta-description",800);' 
   %li
-    = link_to  'SERVICIOS', '#'
+    = link_to  'SERVICIOS', 'javascript:$.scrollTo("#servicios-block",800);'
   %li
-    = link_to  'POST-AFOLIO', '#' 
+    = link_to  'POST-AFOLIO', 'javascript:$.scrollTo("#postafolio-block",800);' 
   %li
-    = link_to  'CONSULTAS', '#'
+    = link_to  'CONSULTAS', 'javascript:$.scrollTo("#consultas-block",800);'
 
   -if current_admin
     %li
@@ -18,3 +20,5 @@
       = link_to 'Slides', slides_path
     %li
       = link_to 'Post-afolio', posts_path
+    %li
+      = link_to 'Desconectarse', destroy_admin_session_path

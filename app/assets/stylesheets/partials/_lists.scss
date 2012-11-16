@@ -6,6 +6,7 @@
   h2.title {
     background: none;
     font-size: $size-heading;
+    line-height: 120%;
     &:after {
       background: none;
     }
@@ -38,6 +39,8 @@
     &:hover .content {
       @include absolute(left, top, 0, 0);
     }
+
+
 
     img {
       @include vtop;

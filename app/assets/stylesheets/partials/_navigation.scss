@@ -7,6 +7,20 @@ ul.menu {
     li {
       @include inline-block-(right);
       padding: 0 $main-menu-li-padding;
+      a {
+        text-transform: uppercase;
+      }
+    }
+  }
+  #menu-dinamico & {
+    @include tcenter;
+    li {
+      @include inline-block-(right);
+      padding: 0 $main-menu-li-padding;
+      margin: 0;
+      a {
+        text-transform: uppercase;
+      }
     }
   }
 }

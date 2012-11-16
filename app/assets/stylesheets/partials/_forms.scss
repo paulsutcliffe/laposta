@@ -46,6 +46,9 @@ label {
   font-family: $font-primary;
   font-size: $size-paragraph;
 }
+.field.textarea {
+  margin-bottom: 5px;
+}
 
 .field input{
   width: $input-width;

@@ -46,7 +46,7 @@ Post.new(
   :tipo => 'Realización',
   :descripcion => 'Microprograma realizado en animación 2D para Cenital S.A.C y RPP.',
   :url_web => 'http://www.google.com',
-  :video => 'https://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
   :created_at => '28 Ago 2012',
   :foto => File.open(File.join(Rails.root, '/public/images/images/img-posts-front.jpg'))
 ).save(false)
@@ -55,7 +55,7 @@ Post.new(
   :tipo => 'Realización',
   :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
   :url_web => 'http://www.google.com',
-  :video => 'https://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
   :created_at => '02 Feb 2011',
   :foto => File.open(File.join(Rails.root, '/public/images/images/img-posts-front.jpg'))
 ).save(false)
@@ -64,7 +64,7 @@ Post.new(
   :tipo => 'Animación y Post',
   :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
   :url_web => 'http://www.google.com',
-  :video => 'https://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
   :created_at => '02 Feb 2011',
   :foto => File.open(File.join(Rails.root, '/public/seed-tests/garden-1.jpg'))
 ).save(false)
@@ -73,7 +73,7 @@ Post.new(
   :tipo => 'Diseño y Web',
   :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
   :url_web => 'http://www.google.com',
-  :video => 'https://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
   :created_at => '02 Feb 2011',
   :foto => File.open(File.join(Rails.root, '/public/seed-tests/garden-2.jpg'))
 ).save(false)
@@ -82,7 +82,7 @@ Post.new(
   :tipo => 'Realización',
   :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
   :url_web => 'http://www.google.com',
-  :video => 'https://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
   :created_at => '02 Feb 2011',
   :foto => File.open(File.join(Rails.root, '/public/seed-tests/garden-3.jpg'))
 ).save(false)
@@ -91,7 +91,7 @@ Post.new(
   :tipo => 'Realización',
   :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
   :url_web => 'http://www.google.com',
-  :video => 'https://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
   :created_at => '02 Feb 2011',
   :foto => File.open(File.join(Rails.root, '/public/images/images/img-posts-front.jpg'))
 ).save(false)
