@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Muli:400,400italic,300,300italic";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -611,13 +612,24 @@ h2.title:after {
   background-position: -152px 0;
 }
 /* line 48, ../../app/assets/stylesheets/partials/_headings.scss */
+#laposta-description h2.title {
+  color: #636466;
+  font-size: 12px;
+  background: none;
+  display: inline;
+}
+/* line 49, ../../app/assets/stylesheets/partials/_headings.scss */
+#laposta-description h2.title:after {
+  background: none;
+}
+/* line 53, ../../app/assets/stylesheets/partials/_headings.scss */
 #servicios-listado h2.title {
   color: #b1b3b6;
   font-size: 14px;
   padding: 20px 0 15px;
   margin: 0 0 15px;
 }
-/* line 49, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 54, ../../app/assets/stylesheets/partials/_headings.scss */
 #servicios-listado h2.title:after {
   background: none;
 }
@@ -747,5 +759,11 @@ p, li {
   text-align: center;
   margin: 35px 0 70px;
 }
-
-/* @import "http://fonts.googleapis.com/css?family=Muli:400,400italic,300,300italic"; */
+/* line 93, ../../app/assets/stylesheets/partials/_layout.scss */
+#laposta-description .content {
+  display: inline;
+}
+/* line 95, ../../app/assets/stylesheets/partials/_layout.scss */
+#laposta-description .content p {
+  display: inline;
+}

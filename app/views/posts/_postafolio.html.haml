@@ -1,6 +1,6 @@
--# content_for :scripts do
-= render 'home/flare'
-= render 'home/flare-init'
+- content_for :scripts do
+  = render 'scripts/flare'
+  = render 'scripts/flare-init'
 
 #postafolio.region
   %nav#portafolio-botones
@@ -13,7 +13,7 @@
 
   %ul#portafolio-listado
     - @posts.each do |post|
-      %li.picture
+      %li{:class => agregar_clase_segun_tipo(post) }
         = image_tag post.foto(:thumb)
         -if current_admin
           %td= link_to 'Ver', post
@@ -25,7 +25,8 @@
             = post.descripcion
             .email
             = post.url_web
-          = link_to '', post.foto(:preview),
+          = link_to '', post.foto(:full),
             :"data-target" => 'flare',
             :"data-flare-gallery" => 'gallery1',
             :"data-flare-thumb" => post.foto(:thumb)
+

@@ -25,10 +25,19 @@ class Post < ActiveRecord::Base
                                          :format => 'jpg'
                                        },
                                          :preview => {
-                                         :geometry => '229x88#',
+                                         :geometry => '230x90#',
                                          :quality => 80,
                                          :format => 'jpg'
-                                       }
+                                       },
+                                         :full => {
+                                         :geometry => '800x600>',
+                                         :quality => 80,
+                                         :format => 'jpg'
+                                         }
                                       }
+
+
+
+
 
  end

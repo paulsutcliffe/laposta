@@ -5,7 +5,7 @@ class Miembro < ActiveRecord::Base
 
   has_attached_file :avatar, :styles => {
                                          :thumb => {
-                                         :geometry => '70#',
+                                         :geometry => '66x66#',
                                          :quality => 80,
                                          :format => 'jpg'
                                        }

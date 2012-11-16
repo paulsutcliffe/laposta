@@ -6,7 +6,7 @@
       %h3
         = post.titulo
       %span.date
-        = post.created_at
+        = l post.created_at, :format => :short
       %p
         = truncate(post.descripcion, :length => 60)
       = image_tag post.foto(:preview)

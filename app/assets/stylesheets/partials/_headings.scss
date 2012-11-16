@@ -45,6 +45,11 @@ h2.title {
   #content-map &:after {background-position: -152px 0}
 
 
+  #laposta-description & {color: $color; font-size: $size-paragraph; background: none; display: inline}
+  #laposta-description &:after {background: none}
+
+
+
   #servicios-listado & {color: $color-gray; font-size: $size-medium; padding: $space*4 0 $space*3; margin: 0 0 $space*3}
   #servicios-listado &:after {background: none}
 }

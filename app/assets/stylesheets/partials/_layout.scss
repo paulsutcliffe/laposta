@@ -90,7 +90,12 @@ p, li {
 #laposta-description {
   @include tcenter;
   margin:$laposta-description 0 $laposta-description * 2; 
+  .content {
+    display: inline;
+    p {
+      display: inline;
+    }
+  }
 }
-
 
 
