@@ -1,6 +1,8 @@
 es:
   app:
     name: La Post-a Audiovisual
+  layout:
+    copyright: La Post-a Audiovisual © Todos los derechos reservados.
   flash:
     actions:
       create:

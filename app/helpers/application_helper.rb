@@ -4,6 +4,9 @@ module ApplicationHelper
     "#{post.tipo == 'Diseño y Web'? 'foto' : 'video'}"
   end
 
+  def agregar_tipo_como_clase(post)
+    post.tipo.gsub(/ /,"").downcase
+  end
 
   def lightbox_si_es_video(post)
 

@@ -1,0 +1,21 @@
+
+:javascript
+  $(window).load(function(){
+   
+    var container = $('#portafolio-listado');
+    
+    container.imagesLoaded(function() {
+      container.isotope({
+        sortBy : 'random',
+       // itemSelector:'li',
+        layoutMode: 'masonry',
+        transformsEnabled: false,
+       // animationEngine : "jquery",
+   //     animationOptions: {
+   //     duration: 750,
+   //     easing: 'linear',
+   //     queue: false
+   //   }
+    });
+  });
+

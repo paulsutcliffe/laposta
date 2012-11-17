@@ -1,19 +1,33 @@
 - content_for :scripts do
   = render 'scripts/flare'
   = render 'scripts/flare-init'
+  = render 'scripts/isotope'
+  = # render 'scripts/isotope_init'
 
 #postafolio.region
+  %nav#portafolio-botones{:style => 'display:none'}
+    %ul
+      %li
+        = link_to 'Realización', url_for( :search => 'Realización' )
+      %li
+        = link_to 'Animación y Post', url_for( :search => 'Animación y Post' )
+      %li
+        = link_to 'Diseño y Web', url_for( :search => 'Diseño y Web' )
+
   %nav#portafolio-botones
-    %li
-      = link_to 'Realización', url_for( :search => 'Realización' )
-    %li
-      = link_to 'Animación y Post', url_for( :search => 'Animación y Post' )
-    %li
-      = link_to 'Diseño y Web', url_for( :search => 'Diseño y Web' )
+    %ul{:"data-option-key" => 'filter'}
+      %li
+        = link_to 'Todos', '#filter', :"data-filter" => '*'
+      %li
+        = link_to 'Realización', '#filter', :"data-filter" => '.realización'
+      %li
+        = link_to 'Animación y Post', '#filter', :"data-filter" => '.animaciónypost'
+      %li
+        = link_to 'Diseño y Web', '#filter', :"data-filter" => '.diseñoyweb'
 
   %ul#portafolio-listado
     - @posts.each do |post|
-      %li{:class => agregar_clase_segun_tipo(post) }
+      %li{:class => agregar_clase_segun_tipo(post) + ' ' + agregar_tipo_como_clase(post) }
         = image_tag post.foto(:thumb)
         .content
           %h2.title= post.titulo

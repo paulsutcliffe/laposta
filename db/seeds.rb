@@ -52,7 +52,7 @@ Post.new(
 ).save(false)
 Post.new(
   :titulo => 'HUNGRY HOUR',
-  :tipo => 'Realización',
+  :tipo => 'Diseño y Web',
   :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
   :url_web => 'http://www.google.com',
   :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
@@ -88,10 +88,37 @@ Post.new(
 ).save(false)
 Post.new(
   :titulo => 'MEJOR GOL DEL AÑO',
-  :tipo => 'Realización',
+  :tipo => 'Animación y Post',
   :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
   :url_web => 'http://www.google.com',
   :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
   :created_at => '02 Feb 2011',
   :foto => File.open(File.join(Rails.root, '/public/images/images/img-posts-front.jpg'))
+).save(false)
+Post.new(
+  :titulo => 'PENALES ',
+  :tipo => 'Realización',
+  :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
+  :url_web => 'http://www.google.com',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :created_at => '02 Feb 2011',
+  :foto => File.open(File.join(Rails.root, '/public/seed-tests/garden-3.jpg'))
+).save(false)
+Post.new(
+  :titulo => 'ESTIGMAS',
+  :tipo => 'Diseño y Web',
+  :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
+  :url_web => 'http://www.google.com',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :created_at => '02 Feb 2011',
+  :foto => File.open(File.join(Rails.root, '/public/seed-tests/garden-2.jpg'))
+).save(false)
+Post.new(
+  :titulo => 'MAC VIM',
+  :tipo => 'Animación y Post',
+  :descripcion => 'Diseño gráfico de banners, banderolas e individuales para Café Café.',
+  :url_web => 'http://www.google.com',
+  :video => 'http://www.youtube.com/watch?v=tEH6qKhQ8G8&feature=g-logo-xit',
+  :created_at => '02 Feb 2011',
+  :foto => File.open(File.join(Rails.root, '/public/seed-tests/garden-1.jpg'))
 ).save(false)
