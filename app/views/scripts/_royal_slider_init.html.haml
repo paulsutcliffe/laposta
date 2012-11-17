@@ -7,6 +7,11 @@
   .rsDefault .rsCloseVideoIcn {background: url('/javascripts/libs/royal-slider-9.2/rs-default.png') -64px 0}
   #postscript-bottom.partners ul.slider{width:950px; height:80px}
   #postscript-bottom .rsABlock{position:absolute; top:5px; left:0}
+
+  .posts-slider{width:232px; height:650px} /* 2px extra de ancho por el border de la imagen */
+  .posts-slider .rsABlock{position:absolute; top:5px; left:0}
+  .posts-slider article { min-height:180px}
+
 :javascript
   // HOME SLIDER
   jQuery(document).ready(function($) {
@@ -42,6 +47,43 @@
     sliderTouch: true,
     keyboardNavEnabled: true,
     });
+
+
+    // NEWS SLIDER
+    $('.posts-slider').royalSlider({
+      autoPlay: {
+      // autoplay options go gere
+      enabled: true,
+      pauseOnHover: true,
+      stopAtAction: false,
+      delay: 10000
+    },
+    block: {
+    // animated blocks options go gere
+      fadeEffect: false,
+      moveEffect: 'right',
+      delay: 500,
+      speed: 150,
+      easing:'easeOutSine'
+    },
+    arrowsNav: true,
+    allowCSS3: true,
+    arrowsNavAutoHide: true,
+    fadeinLoadedSlide: false,
+    //controlNavigationSpacing: 0,
+    //controlNavigation: 'bullets',
+    imageScaleMode: 'none',
+    imageAlignCenter:false,
+    blockLoop: true,
+    loop: true,
+    numImagesToPreload: 6,
+    transitionType: 'move',
+    keyboardNavEnabled: true,
+    sliderDrag: true,
+    sliderTouch: true,
+    keyboardNavEnabled: true,
+    }); 
+
 
 
   });  // END OF DOCUMENT READY

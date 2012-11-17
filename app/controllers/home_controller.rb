@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     @miembros = Miembro.all
     @slides = Slide.all
     @posts = Post.search(params[:search]).paginate(:per_page => 16, :page => params[:page])
-    @ultimos_posts = Post.limit(3)
+    @ultimos_posts = Post.limit(6)
   end
 
 end

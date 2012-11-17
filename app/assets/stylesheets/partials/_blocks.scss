@@ -26,7 +26,14 @@
   // section 1
   #laposta {
     article {
-      @include block-small;
+      // @include block-small;      
+      // por el slider, doy relative, space-bottom y pongo el include block-small en el inner
+      margin-bottom: $space-bottom;
+      position: relative; 
+      .inner {
+        width: 100%;
+        @include block-small;
+      }
       
     }
     img {

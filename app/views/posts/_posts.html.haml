@@ -1,12 +1,30 @@
 %h2.title
   Posts
-.content
-  - @ultimos_posts.each do |post|
-    %article
-      %h3
-        = post.titulo
-      %span.date
-        = l post.created_at, :format => :short
-      %p
-        = truncate(post.descripcion, :length => 60)
-      = image_tag post.foto(:preview)
+
+.posts-slider{:style => 'display:none'}
+  .rsContent
+    .rotador
+      Test 1
+  .rsContent
+    .rotador
+      Test 2
+  .rsContent
+    .rotador
+      Test 3
+
+.posts-slider
+  - @ultimos_posts.each_slice(3) do |slice|
+    .content.rsContent
+      .rotador
+        - slice.each do |post|
+          %article
+            %div{:class => 'inner rsABlock', :"data-move-effect" => cycle('right', 'left', 'right') }
+              %h3
+                = post.titulo
+              %span.date
+                = l post.created_at, :format => :short
+              %p
+                = truncate(post.descripcion, :length => 60)
+              = image_tag post.foto(:preview), :class => 'rsImg'
+
+
