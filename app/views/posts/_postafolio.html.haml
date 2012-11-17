@@ -17,7 +17,7 @@
   %nav#portafolio-botones
     %ul{:"data-option-key" => 'filter'}
       %li
-        = link_to 'Todos', '#filter', :"data-filter" => '*'
+        = link_to 'Galería', '#filter', :"data-filter" => '*'
       %li
         = link_to 'Realización', '#filter', :"data-filter" => '.realización'
       %li
@@ -33,7 +33,7 @@
           %h2.title= post.titulo
           %p
             = post.descripcion
-          - if post.tipo == 'Diseño y Web'  
+          - if post.tipo == 'Diseño y Web'
             .email
               = link_to post.url_web, post.url_web, :target => '_blank'
             = link_to '', post.foto(:full), :class => 'lightbox fotaso',
@@ -42,8 +42,8 @@
               :"data-flare-thumb" => post.foto(:thumb)
           - else
             = link_to '', '', :class => 'lightbox videaso',
-              :"data-target" => 'flare', 
-              :"data-flare-video" => post.video 
+              :"data-target" => 'flare',
+              :"data-flare-video" => post.video
 
           -if current_admin
             .crud
@@ -51,7 +51,7 @@
               = link_to 'Editar', edit_post_path(post)
               = link_to 'Eliminar', post, :confirm => 'Are you sure?', :method => :delete
 
-        - if post.tipo == 'Diseño y Web' 
+        - if post.tipo == 'Diseño y Web'
           - post.imagenes.each do |imagen|
             = link_to '', imagen.fotografia(:full), :class => 'lightbox',
               :"data-target" => 'flare',

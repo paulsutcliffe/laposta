@@ -60,6 +60,7 @@ label {
   padding: $space *2 0 0 $space;
   resize: vertical;
   min-height: $textarea-min-height;
+  height: $textarea-min-height;
 }
 
 .required {
