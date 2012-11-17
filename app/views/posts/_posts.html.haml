@@ -1,17 +1,6 @@
 %h2.title
   Posts
 
-.posts-slider{:style => 'display:none'}
-  .rsContent
-    .rotador
-      Test 1
-  .rsContent
-    .rotador
-      Test 2
-  .rsContent
-    .rotador
-      Test 3
-
 .posts-slider
   - @ultimos_posts.each_slice(3) do |slice|
     .content.rsContent
@@ -22,7 +11,7 @@
               %h3
                 = post.titulo
               %span.date
-                = l post.created_at, :format => :short
+                = l post.created_at, :format => :simple
               %p
                 = truncate(post.descripcion, :length => 60)
               = image_tag post.foto(:preview), :class => 'rsImg'
