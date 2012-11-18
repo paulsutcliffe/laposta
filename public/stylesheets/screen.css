@@ -870,3 +870,8 @@ p, li {
 .active {
   color: #ed1c24;
 }
+
+/* line 136, ../../app/assets/stylesheets/partials/_layout.scss */
+#likes iframe {
+  width: 100% !important;
+}
