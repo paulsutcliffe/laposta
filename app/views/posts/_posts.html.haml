@@ -13,7 +13,7 @@
               %span.date
                 = l post.created_at, :format => :simple
               %p
-                = truncate(post.descripcion, :length => 60)
+                = paragraph(post, 60) 
               = image_tag post.foto(:preview), :class => 'rsImg'
 
 

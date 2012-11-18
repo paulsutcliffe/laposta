@@ -108,12 +108,7 @@ p, li {
 }
 
 .crud {position: relative; z-index: 100}
-    .email {
-      z-index:110; position: relative;
-      a {color:white;
-        &:hover {text-decoration: underline;}
-      }
-    }
+
 
 
 #home-top {display: none}

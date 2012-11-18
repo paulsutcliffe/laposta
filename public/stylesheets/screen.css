@@ -316,29 +316,45 @@ label {
   right: 10px;
 }
 
-/* line 75, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 74, ../../app/assets/stylesheets/partials/_lists.scss */
+.website {
+  z-index: 110;
+  position: relative;
+}
+/* line 76, ../../app/assets/stylesheets/partials/_lists.scss */
+.website a {
+  color: white;
+  background: url(../images/icons/external-link.png) no-repeat 100% 3px;
+  padding-right: 15px;
+}
+/* line 77, ../../app/assets/stylesheets/partials/_lists.scss */
+.website a:hover {
+  text-decoration: underline;
+}
+
+/* line 82, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links {
   text-align: left;
 }
-/* line 77, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 84, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links .label, footer .social-links ul {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   text-align: left;
 }
-/* line 80, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 87, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links .label {
   position: relative;
   top: -5px;
   margin-right: 10px;
   color: white;
 }
-/* line 85, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 92, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul {
   margin-top: 10px;
 }
-/* line 87, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 94, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li {
   display: inline-block;
   *display: inline;
@@ -346,11 +362,11 @@ footer .social-links ul li {
   text-align: left;
   margin: 0;
 }
-/* line 90, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 97, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a {
   background-color: green;
 }
-/* line 93, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 100, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a.facebook {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -57px -48px;
@@ -362,7 +378,7 @@ footer .social-links ul li a.facebook {
   *zoom: 1;
   text-align: left;
 }
-/* line 94, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 101, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a.youtube {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -87px -48px;
@@ -817,26 +833,12 @@ p, li {
   z-index: 100;
 }
 
-/* line 111, ../../app/assets/stylesheets/partials/_layout.scss */
-.email {
-  z-index: 110;
-  position: relative;
-}
-/* line 113, ../../app/assets/stylesheets/partials/_layout.scss */
-.email a {
-  color: white;
-}
 /* line 114, ../../app/assets/stylesheets/partials/_layout.scss */
-.email a:hover {
-  text-decoration: underline;
-}
-
-/* line 119, ../../app/assets/stylesheets/partials/_layout.scss */
 #home-top {
   display: none;
 }
 
-/* line 120, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 115, ../../app/assets/stylesheets/partials/_layout.scss */
 #menu-dinamico {
   position: fixed;
   top: -200px;
@@ -845,7 +847,7 @@ p, li {
   padding: 15px 0;
   z-index: 200;
 }
-/* line 127, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 122, ../../app/assets/stylesheets/partials/_layout.scss */
 #menu-dinamico #home-top {
   display: inline-block;
   *display: inline;
@@ -853,7 +855,7 @@ p, li {
   text-align: left;
 }
 
-/* line 133, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 128, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a,
 .menu a {
   -moz-transition: all 0.3s ease-in;
@@ -862,7 +864,7 @@ p, li {
   transition: all 0.3s ease-in;
 }
 
-/* line 138, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 133, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a:hover,
 .menu a:hover,
 .active {

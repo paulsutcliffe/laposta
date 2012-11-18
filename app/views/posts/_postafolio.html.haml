@@ -32,9 +32,9 @@
         .content
           %h2.title= post.titulo
           %p
-            = post.descripcion
+            = paragraph(post, 60) 
           - if post.tipo == 'Diseño y Web'
-            .email
+            .website
               = link_to post.url_web, post.url_web, :target => '_blank'
             = link_to '', post.foto(:full), :class => 'lightbox fotaso',
               :"data-target" => 'flare',
