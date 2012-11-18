@@ -846,8 +846,9 @@ p, li {
   background: white;
   padding: 15px 0;
   z-index: 200;
+  border-bottom: 3px solid #b1b3b6;
 }
-/* line 122, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 123, ../../app/assets/stylesheets/partials/_layout.scss */
 #menu-dinamico #home-top {
   display: inline-block;
   *display: inline;
@@ -855,7 +856,7 @@ p, li {
   text-align: left;
 }
 
-/* line 128, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 129, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a,
 .menu a {
   -moz-transition: all 0.3s ease-in;
@@ -864,14 +865,14 @@ p, li {
   transition: all 0.3s ease-in;
 }
 
-/* line 133, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 134, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a:hover,
 .menu a:hover,
 .active {
   color: #ed1c24;
 }
 
-/* line 136, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 137, ../../app/assets/stylesheets/partials/_layout.scss */
 #likes iframe {
   width: 100% !important;
 }

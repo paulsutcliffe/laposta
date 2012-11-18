@@ -119,6 +119,7 @@ p, li {
   background: white;
   padding: $space*3 0;
   z-index: 200;
+  border-bottom: 3px solid $color-gray;
   #home-top {
     @include inline-block-(left);
   }
