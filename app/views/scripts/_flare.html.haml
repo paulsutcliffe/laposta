@@ -1,6 +1,8 @@
+- content_for :css do
+  = stylesheet_link_tag '/javascripts/libs/flare/jquery.pixelentity.flare.min.css'
 
-= stylesheet_link_tag '/javascripts/libs/flare/jquery.pixelentity.flare.min.css'
-= javascript_include_tag '/javascripts/libs/flare/jquery.pixelentity.flare.min.js'
+- content_for :scripts do
+  = javascript_include_tag '/javascripts/libs/flare/jquery.pixelentity.flare.min.js'
 
 
 

@@ -135,3 +135,13 @@ p, li {
 
 
 #likes iframe{width: 100% !important}
+
+  .custom-bg .foobar-container {
+    background:#6C9E00 !important;
+  }
+
+  .foobar-message-wrapper {
+    font-family: $font-primary !important;
+    color: white !important;
+    font-weight: lighter !important;
+  }

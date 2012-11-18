@@ -876,3 +876,15 @@ p, li {
 #likes iframe {
   width: 100% !important;
 }
+
+/* line 139, ../../app/assets/stylesheets/partials/_layout.scss */
+.custom-bg .foobar-container {
+  background: #6C9E00 !important;
+}
+
+/* line 143, ../../app/assets/stylesheets/partials/_layout.scss */
+.foobar-message-wrapper {
+  font-family: "Muli" !important;
+  color: white !important;
+  font-weight: lighter !important;
+}
