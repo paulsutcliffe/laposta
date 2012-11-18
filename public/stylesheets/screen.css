@@ -852,3 +852,19 @@ p, li {
   *zoom: 1;
   text-align: left;
 }
+
+/* line 133, ../../app/assets/stylesheets/partials/_layout.scss */
+#portafolio-botones a,
+.menu a {
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+/* line 138, ../../app/assets/stylesheets/partials/_layout.scss */
+#portafolio-botones a:hover,
+.menu a:hover,
+.active {
+  color: #ed1c24;
+}
