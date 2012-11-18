@@ -47,15 +47,22 @@ $(function() {
 // automatic addition of active class in menu when scrolling page 
 $(document).scroll(function(){
     var menu_dinamico = $('#menu-dinamico .menu li a'),
+        body = $('.menu li a'),
         laposta = $('#menu-dinamico .menu li:eq(' + 1 +') a'),
         servicios = $('#menu-dinamico .menu li:eq(' + 2 +') a'),
         portafolio  = $('#menu-dinamico .menu li:eq(' + 3 +') a'),
         consultas  = $('#menu-dinamico .menu li:eq(' + 4 +') a');
 
+        body_region = $('body').offset().top - $(document).scrollTop();
         laposta_region = $('#laposta').offset().top - $(document).scrollTop();
         servicios_region = $('#servicios').offset().top - $(document).scrollTop();
         portafolio_region = $('#postafolio').offset().top - $(document).scrollTop();
         consultas_region = $('#consultas').offset().top - $(document).scrollTop();
+
+
+    if (body_region == 0){
+        body.removeClass('active');
+    } 
 
     if (laposta_region  < 200 ){
         menu_dinamico.removeClass('active');
