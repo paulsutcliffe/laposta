@@ -73,7 +73,7 @@
 
 .website{
   z-index:110; position: relative;
-  a {color:white; background: $bg-external-link; padding-right: $space*3;
+  a {color:white /*background: $bg-external-link*/; padding-right: $space*3;
     &:hover {text-decoration: underline;}
   }
 }
