@@ -1,12 +1,12 @@
 /* TEAM */
 
-       Programation: Paul Sutcliffe 
-       Twitter: @
+       Development: Paul Sutcliffe
+       Twitter: @paulyoyo
 
        Frontend developer: Ricardo Castañeda
        Twitter: @castaneda_ricar
 
-       Web design:  
+       Web design: Walter Peñaherrera
        Twitter: @
 
 /* SITE */
