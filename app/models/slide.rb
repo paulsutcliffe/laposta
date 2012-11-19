@@ -5,7 +5,7 @@ class Slide < ActiveRecord::Base
 
   has_attached_file :slide, :styles => {
                                          :slide => {
-                                         :geometry => '950#x245#',
+                                         :geometry => '950x245#',
                                          :quality => 80,
                                          :format => 'jpg'
                                        }

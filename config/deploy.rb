@@ -27,7 +27,7 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
 set :use_sudo, false
 
 after 'deploy:create_symlink' do
-  #run "killall -USR1 Rack"
-  #run "killall -USR1 Passenger"
+  run "killall -USR1 Rack"
+  run "killall -USR1 Passenger"
 end
 
