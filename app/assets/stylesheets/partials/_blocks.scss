@@ -20,6 +20,7 @@
       @include append(0);
       margin-right: 0;
     }
+    p {text-align: justify;}
 
   }
   
@@ -28,11 +29,13 @@
     article {
       // @include block-small;      
       // por el slider, doy relative, space-bottom y pongo el include block-small en el inner
-      margin-bottom: $space-bottom;
+      // margin-bottom: $space-bottom;
       position: relative; 
       .inner {
         width: 100%;
         @include block-small;
+        margin-bottom:10px;
+        padding-bottom: 18px;
       }
       
     }
@@ -60,8 +63,9 @@
           margin-right: $space;
         }
         .phone:before {
-          @include sprite(17px, 13px, -47px, -30px);
+          @include sprite(17px, 13px, -47px, -33px);
           margin-right: $space;
+          height: 15px;
         }
       }
       ul {
@@ -97,11 +101,17 @@
       @include span(7);
       @include append(1);
       float: left;
+      #new_contacto {
+        margin-top: $space*11;
+      }
     }
     #content-map {
       @include span(12);
       p {
-        margin-bottom: $space;
+        margin-bottom: 0;
+      }
+      .googlemap {
+        margin-top:$space*4;
       }
       float: left;
       .home:before, 
@@ -111,6 +121,7 @@
       }
       .home:before {background-position: -67px -29px}
       .phone:before {background-position: -88px -30px}
+      .email {position: relative; top:-2px}
       .email:before {background-position: -27px -26px}
       .email:after {content:"@lapost-a.com"}
     }

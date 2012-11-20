@@ -7,6 +7,8 @@
     background: none;
     font-size: $size-heading;
     line-height: 120%;
+    color: white;
+    margin: 0;
     &:after {
       background: none;
     }
@@ -24,7 +26,7 @@
       @include absolute(left, top, 0, 100%);
       @include transition; 
       p {
-        color: white;
+        color: $color-gray;
       }
       a.lightbox {
         width: 100%; height: 100%; 
@@ -85,9 +87,13 @@
       @include inline-block-(left);
     }
     .label {
-      position: relative; top:-$space;
       margin-right: $space*2;
       color: white;
+      font-size: 13px;
+      margin-right: 10px;
+      position: relative;
+      top: -10px;
+
     }
     ul {
       margin-top: $space*2;

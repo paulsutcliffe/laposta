@@ -197,19 +197,21 @@ label {
   background: none;
   font-size: 20px;
   line-height: 120%;
+  color: white;
+  margin: 0;
 }
-/* line 10, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 12, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado h2.title:after {
   background: none;
 }
-/* line 14, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 16, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li {
   margin: 0 10px 10px 0;
   float: left;
   position: relative;
   overflow: hidden;
 }
-/* line 19, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 21, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content {
   background: #8b0304;
   width: 100%;
@@ -229,11 +231,11 @@ label {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
 }
-/* line 26, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 28, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content p {
-  color: white;
+  color: #b1b3b6;
 }
-/* line 29, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 31, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content a.lightbox {
   width: 100%;
   height: 100%;
@@ -242,7 +244,7 @@ label {
   top: 0;
   left: 0;
 }
-/* line 33, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 35, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li .content a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: 0px -50px;
@@ -257,17 +259,17 @@ label {
   bottom: 10px;
   right: 10px;
 }
-/* line 39, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 41, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li:hover .content {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 45, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 47, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li img {
   vertical-align: top;
 }
-/* line 50, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 52, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.picture a.lightbox {
   width: 100%;
   height: 100%;
@@ -276,7 +278,7 @@ label {
   top: 0;
   left: 0;
 }
-/* line 54, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 56, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.picture a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: 0px -50px;
@@ -291,7 +293,7 @@ label {
   bottom: 10px;
   right: 10px;
 }
-/* line 61, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 63, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.video a.lightbox {
   width: 100%;
   height: 100%;
@@ -300,7 +302,7 @@ label {
   top: 0;
   left: 0;
 }
-/* line 65, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 67, ../../app/assets/stylesheets/partials/_lists.scss */
 #portafolio-listado li.video a.lightbox:after {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -30px -50px;
@@ -316,45 +318,46 @@ label {
   right: 10px;
 }
 
-/* line 74, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 76, ../../app/assets/stylesheets/partials/_lists.scss */
 .website {
   z-index: 110;
   position: relative;
 }
-/* line 76, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 78, ../../app/assets/stylesheets/partials/_lists.scss */
 .website a {
   color: white;
-  background: url(../images/icons/external-link.png) no-repeat 100% 3px;
   padding-right: 15px;
 }
-/* line 77, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 79, ../../app/assets/stylesheets/partials/_lists.scss */
 .website a:hover {
   text-decoration: underline;
 }
 
-/* line 82, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 84, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links {
   text-align: left;
 }
-/* line 84, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 86, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links .label, footer .social-links ul {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   text-align: left;
 }
-/* line 87, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 89, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links .label {
-  position: relative;
-  top: -5px;
   margin-right: 10px;
   color: white;
+  font-size: 13px;
+  margin-right: 10px;
+  position: relative;
+  top: -10px;
 }
-/* line 92, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 98, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul {
   margin-top: 10px;
 }
-/* line 94, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 100, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li {
   display: inline-block;
   *display: inline;
@@ -362,11 +365,11 @@ footer .social-links ul li {
   text-align: left;
   margin: 0;
 }
-/* line 97, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 103, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a {
   background-color: green;
 }
-/* line 100, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 106, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a.facebook {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -57px -48px;
@@ -378,7 +381,7 @@ footer .social-links ul li a.facebook {
   *zoom: 1;
   text-align: left;
 }
-/* line 101, ../../app/assets/stylesheets/partials/_lists.scss */
+/* line 107, ../../app/assets/stylesheets/partials/_lists.scss */
 footer .social-links ul li a.youtube {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -87px -48px;
@@ -437,46 +440,51 @@ footer .social-links ul li a.youtube {
   padding-right: 0px;
   margin-right: 0;
 }
-/* line 28, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 23, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content .column p {
+  text-align: justify;
+}
+/* line 29, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta article {
-  margin-bottom: 15px;
   position: relative;
 }
-/* line 33, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 34, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta article .inner {
   width: 100%;
   padding-bottom: 15px;
   margin-bottom: 15px;
   background: url(../images/backgrounds/border-style-half.jpg) repeat-x 0 100%;
+  margin-bottom: 10px;
+  padding-bottom: 18px;
 }
-/* line 39, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 42, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta img {
   border: 1px solid #ed1c24;
 }
-/* line 43, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 46, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff img {
   float: left;
   margin: 0 5px 5px 0;
 }
-/* line 47, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 50, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff .datos {
   overflow: hidden;
 }
-/* line 49, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 52, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff .datos .nombre {
   text-transform: uppercase;
 }
-/* line 52, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 55, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff .datos .nombre, #content #laposta #staff .datos .cargo {
   margin-bottom: 5px;
 }
-/* line 55, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 58, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff .datos .email, #content #laposta #staff .datos .phone {
   width: 100%;
   float: left;
   clear: left;
 }
-/* line 58, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 61, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff .datos .email:before {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -27px -30px;
@@ -489,10 +497,10 @@ footer .social-links ul li a.youtube {
   text-align: left;
   margin-right: 5px;
 }
-/* line 62, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 65, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff .datos .phone:before {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
-  background-position: -47px -30px;
+  background-position: -47px -33px;
   width: 17px;
   height: 13px;
   content: "";
@@ -501,8 +509,9 @@ footer .social-links ul li a.youtube {
   *zoom: 1;
   text-align: left;
   margin-right: 5px;
+  height: 15px;
 }
-/* line 68, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 72, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #laposta #staff ul li {
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -511,11 +520,11 @@ footer .social-links ul li a.youtube {
   float: left;
   clear: left;
 }
-/* line 77, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 81, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #servicios-listado li {
   margin-bottom: 30px;
 }
-/* line 85, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 89, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #postafolio #portafolio-botones li {
   display: inline-block;
   *display: inline;
@@ -525,22 +534,30 @@ footer .social-links ul li a.youtube {
   text-transform: uppercase;
   font-size: 14px;
 }
-/* line 96, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 100, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #sidebar-form {
   width: 270px;
   padding-right: 40px;
   float: left;
 }
-/* line 101, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 104, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content #consultas #sidebar-form #new_contacto {
+  margin-top: 55px;
+}
+/* line 108, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #content-map {
   width: 470px;
   float: left;
 }
-/* line 103, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 110, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #content-map p {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
-/* line 109, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 113, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content #consultas #content-map .googlemap {
+  margin-top: 20px;
+}
+/* line 119, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #content-map .home:before,
 #content #consultas #content-map .phone:before,
 #content #consultas #content-map .email:before {
@@ -554,24 +571,29 @@ footer .social-links ul li a.youtube {
   *zoom: 1;
   text-align: left;
 }
-/* line 112, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 122, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #content-map .home:before {
   background-position: -67px -29px;
 }
-/* line 113, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 123, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #content-map .phone:before {
   background-position: -88px -30px;
 }
-/* line 114, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 124, ../../app/assets/stylesheets/partials/_blocks.scss */
+#content #consultas #content-map .email {
+  position: relative;
+  top: -2px;
+}
+/* line 125, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #content-map .email:before {
   background-position: -27px -26px;
 }
-/* line 115, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 126, ../../app/assets/stylesheets/partials/_blocks.scss */
 #content #consultas #content-map .email:after {
   content: "@lapost-a.com";
 }
 
-/* line 124, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 135, ../../app/assets/stylesheets/partials/_blocks.scss */
 #posts article h3 {
   display: inline;
   text-transform: uppercase;
@@ -580,7 +602,7 @@ footer .social-links ul li a.youtube {
   color: #636466;
   margin-bottom: 10px;
 }
-/* line 127, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 138, ../../app/assets/stylesheets/partials/_blocks.scss */
 #posts article h3:before {
   background: url(/images/icons/bg-icons.png) no-repeat 0 0;
   background-position: -5px -33px;
@@ -592,7 +614,7 @@ footer .social-links ul li a.youtube {
   *zoom: 1;
   text-align: left;
 }
-/* line 131, ../../app/assets/stylesheets/partials/_blocks.scss */
+/* line 142, ../../app/assets/stylesheets/partials/_blocks.scss */
 #posts article span {
   font-size: 12px;
   line-height: 115%;
@@ -665,7 +687,7 @@ h2.title:after {
 /* line 49, ../../app/assets/stylesheets/partials/_headings.scss */
 #laposta-description h2.title {
   color: #636466;
-  font-size: 12px;
+  font-size: 16px;
   background: none;
   display: inline;
 }
@@ -761,29 +783,38 @@ body footer .inner {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  width: 800px;
 }
-/* line 53, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 54, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner .social-links {
   width: 230px;
   float: left;
 }
-/* line 57, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 58, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner .copyright {
   width: 390px;
   float: right;
+  padding-right: 15px;
   font-size: 12px;
   color: white;
   padding-top: 15px;
+  position: relative;
+  top: 4px;
   text-align: right;
 }
 
-/* line 70, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 73, ../../app/assets/stylesheets/partials/_layout.scss */
+#preface-top {
+  border-bottom: 4px solid #b1b3b6;
+}
+
+/* line 77, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   width: 800px;
   margin: 0 auto;
 }
 
-/* line 75, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 82, ../../app/assets/stylesheets/partials/_layout.scss */
 .region:after {
   content: ".";
   display: block;
@@ -793,18 +824,18 @@ body footer .inner .copyright {
   height: 0;
 }
 
-/* line 78, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 85, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   zoom: 1;
 }
 
-/* line 82, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 89, ../../app/assets/stylesheets/partials/_layout.scss */
 a {
   color: #636466;
   text-decoration: none;
 }
 
-/* line 87, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 94, ../../app/assets/stylesheets/partials/_layout.scss */
 p, li {
   font-size: 12px;
   line-height: 115%;
@@ -812,33 +843,39 @@ p, li {
   margin-bottom: 10px;
 }
 
-/* line 98, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 105, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description {
   text-align: center;
   margin: 0 0 70px;
-  border-top: 55px solid white;
+  border-top: 35px solid transparent;
 }
-/* line 102, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 109, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content {
   display: inline;
 }
-/* line 104, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 111, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content p {
   display: inline;
+  font-size: 16px;
+}
+/* line 114, ../../app/assets/stylesheets/partials/_layout.scss */
+#laposta-description .content p b {
+  color: #ed1c24;
+  font-style: italic;
 }
 
-/* line 110, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 122, ../../app/assets/stylesheets/partials/_layout.scss */
 .crud {
   position: relative;
   z-index: 100;
 }
 
-/* line 114, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 126, ../../app/assets/stylesheets/partials/_layout.scss */
 #home-top {
   display: none;
 }
 
-/* line 115, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 127, ../../app/assets/stylesheets/partials/_layout.scss */
 #menu-dinamico {
   position: fixed;
   top: -200px;
@@ -846,9 +883,8 @@ p, li {
   background: white;
   padding: 15px 0;
   z-index: 200;
-  border-bottom: 3px solid #b1b3b6;
 }
-/* line 123, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 134, ../../app/assets/stylesheets/partials/_layout.scss */
 #menu-dinamico #home-top {
   display: inline-block;
   *display: inline;
@@ -856,7 +892,7 @@ p, li {
   text-align: left;
 }
 
-/* line 129, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 140, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a,
 .menu a {
   -moz-transition: all 0.3s ease-in;
@@ -865,26 +901,38 @@ p, li {
   transition: all 0.3s ease-in;
 }
 
-/* line 134, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 145, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a:hover,
 .menu a:hover,
 .active {
   color: #ed1c24;
 }
 
-/* line 137, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 148, ../../app/assets/stylesheets/partials/_layout.scss */
 #likes iframe {
   width: 100% !important;
 }
 
-/* line 139, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 150, ../../app/assets/stylesheets/partials/_layout.scss */
 .custom-bg .foobar-container {
   background: #6C9E00 !important;
 }
 
-/* line 143, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 154, ../../app/assets/stylesheets/partials/_layout.scss */
 .foobar-message-wrapper {
   font-family: "Muli" !important;
   color: white !important;
   font-weight: lighter !important;
+}
+
+/* line 160, ../../app/assets/stylesheets/partials/_layout.scss */
+#content {
+  background: url(../images/backgrounds/bg-tramado.jpg) repeat-x 0 0;
+  background-position: 0 120px;
+}
+
+/* line 162, ../../app/assets/stylesheets/partials/_layout.scss */
+.map-holder {
+  border: 1px solid #ed1c24;
+  width: 100%;
 }

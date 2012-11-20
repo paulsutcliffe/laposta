@@ -50,6 +50,7 @@ body{
     background: $color-secondary-dark;
     .inner {
       @include container;
+      width: $main-width;
       .social-links {
         @include span(6);
         @include fleft;
@@ -57,15 +58,21 @@ body{
       .copyright {
         @include span(10);
         @include fright;
+        padding-right: 15px;
         font-size: $size-paragraph;
         color: white;
         padding-top: $space*3;
+        position: relative;
+        top: 4px;
         @include tright;
       }
     }
   }
 }
 
+#preface-top {
+  border-bottom: 4px solid $color-gray;
+}
 
 .region {
   width: $main-width;
@@ -98,11 +105,16 @@ p, li {
 #laposta-description {
   @include tcenter;
   margin:0 0 $laposta-description * 2; 
-  border-top: 55px solid white;
+  border-top: 35px solid transparent;
   .content {
     display: inline;
     p {
       display: inline;
+      font-size: $size-main-paragraph;
+      b {
+        color: $color-secondary;
+        font-style: italic;
+      }
     }
   }
 }
@@ -119,7 +131,6 @@ p, li {
   background: white;
   padding: $space*3 0;
   z-index: 200;
-  border-bottom: 3px solid $color-gray;
   #home-top {
     @include inline-block-(left);
   }
@@ -145,3 +156,7 @@ p, li {
     color: white !important;
     font-weight: lighter !important;
   }
+
+#content{background: $bg-tramado; background-position: 0 120px }
+
+.map-holder {border: 1px solid $color-secondary; width: 100%}
