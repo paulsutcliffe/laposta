@@ -30,7 +30,7 @@
       %li{:class => agregar_clase_segun_tipo(post) + ' ' + agregar_tipo_como_clase(post) }
         = image_tag post.foto(:thumb)
         .content
-          %h2.title= post.titulo
+          %h3.title= post.titulo
           %p
             = paragraph(post, 60) 
           - if post.tipo == 'Diseño y Web'

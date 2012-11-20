@@ -193,7 +193,7 @@ label {
 }
 
 /* line 6, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado h2.title {
+#portafolio-listado h3.title {
   background: none;
   font-size: 20px;
   line-height: 120%;
@@ -201,7 +201,7 @@ label {
   margin: 0;
 }
 /* line 12, ../../app/assets/stylesheets/partials/_lists.scss */
-#portafolio-listado h2.title:after {
+#portafolio-listado h3.title:after {
   background: none;
 }
 /* line 16, ../../app/assets/stylesheets/partials/_lists.scss */
