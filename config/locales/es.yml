@@ -1,8 +1,9 @@
 es:
   app:
-    name: La Post-a Audiovisual
+    name: La Post-A Audiovisual
   layout:
-    copyright: La Post-a Audiovisual © Todos los derechos reservados.
+    copyright: La Post-A Audiovisual © Todos los derechos reservados.
+    development: Desarrollado por
   flash:
     actions:
       create:

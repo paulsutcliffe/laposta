@@ -1,10 +1,10 @@
 /*
 =============================================================
 MAIN STRUCTURE
-============================================================= 
+=============================================================
 */
 
-/* 
+/*
 body ul, body ol, body footer nav li,
 html body footer nav,
 html body footer .copyright,
@@ -15,7 +15,7 @@ body{
   @include blueprint-debug;
   font-family:$font-primary;
   .wrapper {
-    @include container; 
+    @include container;
   /*  @include showgrid; */
   }
 
@@ -23,7 +23,7 @@ body{
     width: 100%;
 
     height : $header-size;
-    background: $bg-header; 
+    background: $bg-header;
     .wrapper {
       @include container;
       height : $header-size;
@@ -52,19 +52,36 @@ body{
       @include container;
       width: $main-width;
       .social-links {
-        @include span(6);
+        @include span(5);
         @include fleft;
       }
       .copyright {
-        @include span(10);
-        @include fright;
+        @include span(9);
+        @include fleft;
+        //float: none;
         padding-right: 15px;
         font-size: $size-paragraph;
         color: white;
         padding-top: $space*3;
         position: relative;
         top: 4px;
+        @include tleft;
+      }
+      .author {
+        @include span(3);
+        @include fright;
+        padding-right: 110px;
+        font-size: $size-paragraph;
+        color: white;
+        padding-top: $space*3;
+        position: relative;
         @include tright;
+        top: 4px;
+        a img {
+          position: absolute;
+          right: 0;
+          top: 11px;
+        }
       }
     }
   }
@@ -80,7 +97,7 @@ body{
 }
 
 .region:after {
-  content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; 
+  content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;
 }
 .region {
   zoom:1
@@ -104,7 +121,7 @@ p, li {
 
 #laposta-description {
   @include tcenter;
-  margin:0 0 $laposta-description * 2; 
+  margin:0 0 $laposta-description * 2;
   padding-top: 30px;
   .content {
     display: inline;
@@ -137,7 +154,7 @@ p, li {
 }
 
 #portafolio-botones a,
-.menu a{-moz-transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; 
+.menu a{-moz-transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in;
 -o-transition: all 0.3s ease-in; transition: all 0.3s ease-in}
 
 #portafolio-botones a:hover,
@@ -166,14 +183,14 @@ p, li {
     background: $bg-tramado; background-position: 0 120px;
   }
 
-  
+
   #posts.index &,
   #devise-registrations &,
   #devise-sessions & {
-    @include container; 
-    
+    @include container;
+
     form {
-      width: 400px; 
+      width: 400px;
       float: left;
     }
     h1.page-title {
@@ -184,8 +201,8 @@ p, li {
 
   .new &,
   .edit & {
-    @include container; 
-    
+    @include container;
+
     form {
       width: 100%;
       float: left;
