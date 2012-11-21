@@ -1,16 +1,15 @@
-%h2 Ingresar
+%h2.title Ingresar
 = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-  %div
+  %div.field
     = f.label :email, "E-mail"
-    %br/
     = f.email_field :email
-  %div
+  %div.field
     = f.label :password, "Contraseña"
-    %br/
     = f.password_field :password
   - if devise_mapping.rememberable?
-    %div
+    %div.field.checkbox
       = f.check_box :remember_me
       = f.label :remember_me, "No preguntar de nuevo"
-  %div= f.submit "Ingresar"
+  %div.actions
+    = f.submit "Ingresar"
 = render :partial => "devise/shared/links"

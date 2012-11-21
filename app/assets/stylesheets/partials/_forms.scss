@@ -38,6 +38,9 @@ label {
   float: left;
   text-transform: uppercase;
   margin-bottom: $space * 1;
+  .checkbox & {
+    width: auto;
+  }
 }
 
 .field input, .field textarea{

@@ -141,8 +141,12 @@ label {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
+/* line 41, ../../app/assets/stylesheets/partials/_forms.scss */
+.checkbox label {
+  width: auto;
+}
 
-/* line 43, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 46, ../../app/assets/stylesheets/partials/_forms.scss */
 .field input, .field textarea {
   border: 1px solid #ed1c24;
   background: url(../images/backgrounds/bg-input.jpg) repeat;
@@ -150,18 +154,18 @@ label {
   font-size: 12px;
 }
 
-/* line 49, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 52, ../../app/assets/stylesheets/partials/_forms.scss */
 .field.textarea {
   margin-bottom: 5px;
 }
 
-/* line 53, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 56, ../../app/assets/stylesheets/partials/_forms.scss */
 .field input {
   width: 220px;
   padding: 10px 5px;
 }
 
-/* line 58, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 61, ../../app/assets/stylesheets/partials/_forms.scss */
 .field textarea {
   width: 260px;
   padding: 10px 0 0 5px;
@@ -170,7 +174,7 @@ label {
   height: 100px;
 }
 
-/* line 66, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 69, ../../app/assets/stylesheets/partials/_forms.scss */
 .required {
   font-size: 14px;
   padding-bottom: 5px;
@@ -178,7 +182,7 @@ label {
   background-position: 0 100%;
 }
 
-/* line 73, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 76, ../../app/assets/stylesheets/partials/_forms.scss */
 .actions input {
   float: right;
   color: #ed1c24;
@@ -847,7 +851,7 @@ p, li {
 #laposta-description {
   text-align: center;
   margin: 0 0 70px;
-  border-top: 35px solid transparent;
+  padding-top: 30px;
 }
 /* line 109, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content {
@@ -926,13 +930,53 @@ p, li {
 }
 
 /* line 160, ../../app/assets/stylesheets/partials/_layout.scss */
-#content {
-  background: url(../images/backgrounds/bg-tramado.jpg) repeat-x 0 0;
-  background-position: 0 120px;
-}
-
-/* line 162, ../../app/assets/stylesheets/partials/_layout.scss */
 .map-holder {
   border: 1px solid #ed1c24;
   width: 100%;
+}
+
+/* line 162, ../../app/assets/stylesheets/partials/_layout.scss */
+#scroll-top {
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 165, ../../app/assets/stylesheets/partials/_layout.scss */
+.front #content {
+  background: url(../images/backgrounds/bg-tramado.jpg) repeat-x 0 0;
+  background-position: 0 120px;
+}
+/* line 172, ../../app/assets/stylesheets/partials/_layout.scss */
+#posts.index #content, #devise-registrations #content, #devise-sessions #content {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 175, ../../app/assets/stylesheets/partials/_layout.scss */
+#posts.index #content form, #devise-registrations #content form, #devise-sessions #content form {
+  width: 400px;
+  float: left;
+}
+/* line 179, ../../app/assets/stylesheets/partials/_layout.scss */
+#posts.index #content h1.page-title, #devise-registrations #content h1.page-title, #devise-sessions #content h1.page-title {
+  margin-top: 0;
+  border-top: 0;
+}
+/* line 186, ../../app/assets/stylesheets/partials/_layout.scss */
+.new #content, .edit #content {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 189, ../../app/assets/stylesheets/partials/_layout.scss */
+.new #content form, .edit #content form {
+  width: 100%;
+  float: left;
+}
+/* line 193, ../../app/assets/stylesheets/partials/_layout.scss */
+.new #content h1.page-title, .edit #content h1.page-title {
+  margin-top: 0;
+  border-top: 0;
 }

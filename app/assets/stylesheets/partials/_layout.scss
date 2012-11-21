@@ -105,7 +105,7 @@ p, li {
 #laposta-description {
   @include tcenter;
   margin:0 0 $laposta-description * 2; 
-  border-top: 35px solid transparent;
+  padding-top: 30px;
   .content {
     display: inline;
     p {
@@ -157,6 +157,44 @@ p, li {
     font-weight: lighter !important;
   }
 
-#content{background: $bg-tramado; background-position: 0 120px }
-
 .map-holder {border: 1px solid $color-secondary; width: 100%}
+
+#scroll-top {height: 0; visibility: hidden}
+
+#content {
+  .front & {
+    background: $bg-tramado; background-position: 0 120px;
+  }
+
+  
+  #posts.index &,
+  #devise-registrations &,
+  #devise-sessions & {
+    @include container; 
+    
+    form {
+      width: 400px; 
+      float: left;
+    }
+    h1.page-title {
+      margin-top: 0;
+      border-top: 0;
+    }
+  }
+
+  .new &,
+  .edit & {
+    @include container; 
+    
+    form {
+      width: 100%;
+      float: left;
+    }
+    h1.page-title {
+      margin-top: 0;
+      border-top: 0;
+    }
+  }
+
+
+}

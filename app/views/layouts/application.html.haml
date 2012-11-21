@@ -6,9 +6,10 @@
     = render 'layouts/head'
 
 
-  %body
+  %body{:id => bodyid, :class => bodyclass }
     - if notice
       %p.notice= notice
+    #scroll-top
     #menu-dinamico
       = render 'layouts/menu'
     %header{:role => 'banner'}
