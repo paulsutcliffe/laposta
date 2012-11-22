@@ -83,4 +83,28 @@ $(document).scroll(function(){
         menu_dinamico.removeClass('active');
         consultas.addClass('active');
     }
+
+
+
+
+
+
+  // var fb_iframe = $('#likes iframe:eq(0)');
+  // var fb_cloned = fb_iframe.clone();
+  // var box_padding = $('.fan_box .connections_grid .grid_item');
+  // 
+  // //fb_cloned = fb_cloned.find(box_padding).css('background', 'red')
+  // 
+  // 
+  // fb_cloned.addClass('iframeado').insertAfter(fb_iframe);
+  // fb_iframe.hide();
+  // 
+  // $('iframeado').contents().find('.fan_box .connections_grid .grid_item').css('background', 'red')
+
+  
+
+//  $('#likes iframe').contents().find('.fan_box .connections_grid .grid_item').css('padding', '0 3px 8px 0');
+
+
+  
 });

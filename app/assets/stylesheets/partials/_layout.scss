@@ -161,8 +161,8 @@ p, li {
 .menu a:hover,
 .active {color: $color-secondary;}
 
-
-#likes iframe{width: 100% !important}
+#likes {overflow: hidden}
+#likes iframe{width: 110% !important; position: relative; left: -5px}
 
   .custom-bg .foobar-container {
     background:#6C9E00 !important;
@@ -214,4 +214,9 @@ p, li {
   }
 
 
+}
+
+
+.fb-fake-border {
+  border-left: 1px solid #aaa; border-right: 1px solid #aaa;
 }
