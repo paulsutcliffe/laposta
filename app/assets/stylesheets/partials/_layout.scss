@@ -61,11 +61,11 @@ body{
         //float: none;
         padding-right: 15px;
         font-size: $size-paragraph;
+        text-align: center;
         color: white;
         padding-top: $space*3;
         position: relative;
         top: 4px;
-        @include tleft;
       }
       .author {
         @include span(3);

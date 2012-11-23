@@ -3,8 +3,8 @@ class HomeController < ApplicationController
     @contacto = Contacto.new(params[:contacto])
     @miembros = Miembro.all
     @slides = Slide.all
-    @posts = Post.search(params[:search]).paginate(:per_page => 16, :page => params[:page])
-    @ultimos_posts = Post.limit(6)
+    @posts = Post.order("created_at DESC")
+    @ultimos_posts = Post.order("created_at DESC").limit(6)
   end
 
 end
