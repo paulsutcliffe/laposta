@@ -221,6 +221,10 @@ p, li {
   border-left: 1px solid #aaa; border-right: 1px solid #aaa;
 }
 
+
+.rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs,
 .rsDefault .rsBullets {
-  background: none;
+  background: none !important;
 }
+
+#preface-top .royalSlider {height: 245px !important}

@@ -1012,7 +1012,13 @@ p, li {
   border-right: 1px solid #aaa;
 }
 
-/* line 224, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 226, ../../app/assets/stylesheets/partials/_layout.scss */
+.rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs,
 .rsDefault .rsBullets {
-  background: none;
+  background: none !important;
+}
+
+/* line 230, ../../app/assets/stylesheets/partials/_layout.scss */
+#preface-top .royalSlider {
+  height: 245px !important;
 }
