@@ -32,7 +32,7 @@
         .content
           %h3.title= post.titulo
           %p
-            = paragraph(post, 60) 
+            = paragraph(post, 80) 
           - if post.tipo == 'Diseño y Web'
             .website
               = link_to post.url_web, post.url_web, :target => '_blank'
