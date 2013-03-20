@@ -1022,3 +1022,9 @@ p, li {
 #preface-top .royalSlider {
   height: 245px !important;
 }
+
+/* line 232, ../../app/assets/stylesheets/partials/_layout.scss */
+.field_with_errors .message {
+  color: red;
+  font-size: 13px;
+}

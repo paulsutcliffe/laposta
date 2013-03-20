@@ -2,7 +2,7 @@
   = render 'scripts/foobar'
   = render 'scripts/foobar_init'
 
-= form_for(@contacto, :url => { :controller => 'contactos', :action => 'create' }) do |f|
+= form_for(@contacto, :url => { :controller => 'contactos', :action => 'create' }, :validate => true) do |f|
   -if @contacto.errors.any?
     #error_explanation
       %h2= "#{pluralize(@contacto.errors.count, "error")} prohibited this contacto from being saved:"
